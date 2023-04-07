@@ -3,7 +3,7 @@ import { detect } from 'detect-browser'
 
 export const browser = detect()
 
-const LITE_WALLET_URL = 'https://lite.sync.vecha.in/'
+const LITE_WALLET_URL = 'chrome-extension://kkomniakdoljeedjhapcdekpdnjhlkmb/www/index.html'
 
 function openLiteWallet(src: string): void {
     const options = (() => {
