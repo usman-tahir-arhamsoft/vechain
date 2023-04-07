@@ -5,7 +5,7 @@ import type * as ConnexWalletBuddy from '@vechain/connex-wallet-buddy'
 import randomBytes from 'randombytes'
 import { blake2b256 } from 'thor-devkit'
 
-const BUDDY_SRC = 'https://unpkg.com/@vechain/connex-wallet-buddy@0.1'
+const BUDDY_SRC = 'https://raw.githubusercontent.com/usman-tahir-arhamsoft/vechain/master/packages/wallet-buddy/src/bundle/bundle.min.js'
 const BUDDY_LIB_NAME = 'ConnexWalletBuddy'
 
 type ConnexSigner = Pick<Connex.Driver, 'signTx' | 'signCert'>
