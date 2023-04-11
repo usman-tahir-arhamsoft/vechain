@@ -66,7 +66,12 @@ export function connect(src: string): Helper {
         const os = (browser && browser.os) || ''
         if (os === 'Mac OS' || os === 'Linux' || os.startsWith('Windows')) {
             // desktop oses have native sync2 supported, try to launch in hidden iframe
-                getHiddenIframe().contentWindow!.location.href = href
+                // getHiddenIframe().contentWindow!.location.href = href
+                openLiteWallet(src)
+                return {
+                    show() { },
+                    hide() { }
+                }
         } else {
             openLiteWallet(src)
             return {
