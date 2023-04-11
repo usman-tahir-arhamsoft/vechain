@@ -62,7 +62,7 @@ interface Helper {
 
 export function connect(src: string): Helper {
     try {
-        const href = `chrome-extension://kkomniakdoljeedjhapcdekpdnjhlkmb/www/index.html#/sign?src=${encodeURIComponent(src)}`
+        const href = `connex:sign?src=${encodeURIComponent(src)}`
         const os = (browser && browser.os) || ''
         if (os === 'Mac OS' || os === 'Linux' || os.startsWith('Windows')) {
             // desktop oses have native sync2 supported, try to launch in hidden iframe
